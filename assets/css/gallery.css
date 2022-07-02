@@ -1,0 +1,216 @@
+p {
+    margin-bottom: 0px;
+}
+
+/* GALLERY  */
+
+.JC-GalleryContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.JC-GalleryLeft {
+    width: 350px;
+}
+
+.JC-GalleryRight {
+    width: 950px;
+}
+
+.JC-GalleryHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #34343e;
+    margin-bottom: 25px;
+    height: 60px;
+}
+
+.JC-GalleryHead small {
+    font-size: 30px;
+    letter-spacing: 8px;
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.JC-GalleryHead-title {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.collapsible {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+    background: var(--secondBG);
+    color: var(--grey);
+    padding: 0px 25px;
+    margin: 8px 0px;
+    border-radius: 10px;
+}
+
+.filter-name {
+    display: flex;
+    align-items: center;
+}
+  
+.active, .collapsible:hover {
+    background-color: var(--accent);
+    color: #fff;
+}
+
+.collapsible .fa-plus {
+    transition: 0.3s ease;
+}
+
+.active .fa-plus {
+    transform: rotate(45deg);
+    transition: 0.3s ease;
+}
+  
+.content {
+    display: none;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: var(--body);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.filter-name i {
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.filter-type {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.filter-btn {
+    color: #fff;
+    outline: inherit;
+    background: var(--body);
+    width: 100%;
+    text-align: left;
+    padding: 15px 25px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+
+.filter-btn:hover {
+    color: #fff;
+    background: var(--accent);
+    transition: 0.3s ease;
+    opacity: 1;
+}
+
+.JC-GalleryFilter-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.filterDiv {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    width: 225px;
+    text-align: center;
+    margin: 15px 5px;
+    cursor: pointer;
+}
+
+.JC-GalleryFilterBox-head {
+    background: var(--secondBG);
+    height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.JC-GalleryFilter-nftBottom {
+    background: var(--secondBG);
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+.JC-GalleryFilter-nftBottom p {
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.JC-GalleryFilter-nftBottom small {
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+.filterDiv:hover {
+    transition: 0.3s ease;
+}
+
+.show {
+    display: flex;
+}
+
+.JC-GalleryFilter-nft {
+    width: 80%;
+    transition: 0.3s ease;
+}
+
+.JC-GalleryFilter-nft-info p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+
+.JC-GalleryFilter-nft-info small {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.filterDiv:hover .JC-GalleryFilter-nft {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.JC-GalleryBody-head {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.modal-header {
+    color: #fff !important;
+}

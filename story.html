@@ -1,0 +1,322 @@
+<html>
+    
+    <head>
+        <meta property="og:locale" content="en_us"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bahiana&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/951696072a.js" crossorigin="anonymous"></script>
+
+        <title>SOLBOTS | STORY</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+
+    <body>
+
+    <!-- MENU -->
+    <div id="mobileMenu" class="JC-mobile-overlay notBlur">
+        
+        <div class="JC-mobileMenu-header notBlur">
+            <img src="/assets/images/logo-gif.gif" class="JC-mobileMenu-logo notBlur"/>
+            <a href="javascript:void(0)" class="JC-closeBtn notBlur" onclick="closeMenu()">&times;</a>
+        </div>
+
+        <div class="JC-mobileMenu-overlay notBlur">
+            <a href="/" class="notBlur mobileLink">Home</a>
+            <a href="/mindmap" class="notBlur mobileLink">Mindmap</a>
+            <a href="/gallery" class="notBlur mobileLink">Gallery</a>
+            <a href="/lore" class="notBlur mobileLink">Lore</a>
+
+            <button class="mobile-dropdownbtn notBlur" onclick="mobileDropOpen()">Utility 
+                <i class="fa fa-caret-down notBlur"></i>
+            </button>
+
+            <div class="mobile-container notBlur" id="mobileOpenDrop">
+                <a href="#" class="JC-DropLink notBlur">
+                    <img src="https://famousfoxes.com/tokenmarket.e23ae380.png" class="JC-DropLink-img notBlur"/>
+
+                    <div class="JC-DropLink-div notBlur">
+                        <p class="notBlur">Staking</p>
+                        <small class="notBlur">Send NFT messages</small>
+                    </div>
+                </a>
+
+                <a href="#" class="JC-DropLink notBlur">
+                    <img src="https://famousfoxes.com/tokenmarket.e23ae380.png" class="JC-DropLink-img notBlur"/>
+
+                    <div class="JC-DropLink-div notBlur">
+                        <p class="notBlur">Staking</p>
+                        <small class="notBlur">Send NFT messages</small>
+                    </div>
+                </a>
+
+                <a href="#" class="JC-DropLink notBlur">
+                    <img src="https://famousfoxes.com/tokenmarket.e23ae380.png" class="JC-DropLink-img notBlur"/>
+
+                    <div class="JC-DropLink-div notBlur">
+                        <p class="notBlur">Staking</p>
+                        <small class="notBlur">Send NFT messages</small>
+                    </div>
+                </a>
+
+                <a href="#" class="JC-DropLink notBlur">
+                    <img src="https://famousfoxes.com/tokenmarket.e23ae380.png" class="JC-DropLink-img notBlur"/>
+
+                    <div class="JC-DropLink-div notBlur">
+                        <p class="notBlur">Staking</p>
+                        <small class="notBlur">Send NFT messages</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="JC-mobileMenu-footer notBlur">
+            <a href="#" class="JC-DropLink-terms notBlur">Terms & Conditions</a>
+            <div class="JC-DropDown-bottomRows notBlur">
+                <a href="#" class="JC-DropLink-social notBlur"><i class="fa-brands fa-discord notBlur"></i></a>
+                <a href="#" class="JC-DropLink-social notBlur"><i class="fa-brands fa-twitter notBlur"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- MENU -->
+
+    <div class="JC-mobileBlur">
+
+        <div class="JC-Container">
+
+            <div class="JC-navBar">
+
+                <div class="JC-navBar-width">
+                    <div class="JC-navLeft">
+                        <a href="#" class="JC-navLink">Home</a>
+                        <a href="/roadmap" class="JC-navLink">Roadmap</a>
+                        <a href="/gallery" class="JC-navLink">Gallery</a>
+                        <a href="/lore" class="JC-navLink JC-Active">Lore</a>
+
+                        <div class="dropdown">
+                            <button onclick="dropdownOpen()" class="dropbtn">Utility <i class="fa-solid fa-caret-down"></i></button>
+                            
+                            <div id="myDropdown" class="dropdown-content">
+
+                                <div class="JC-DropDown-rows">
+
+                                    <a href="#" class="JC-DropLink">
+                                        <img src="https://famousfoxes.com/tokenmarket.e23ae380.png" class="JC-DropLink-img"/>
+
+                                        <div class="JC-DropLink-div">
+                                            <p>Staking</p>
+                                            <small>Send NFT messages</small>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="JC-DropLink">
+                                        <img src="https://famousfoxes.com/tokenmarket.e23ae380.png" class="JC-DropLink-img"/>
+
+                                        <div class="JC-DropLink-div">
+                                            <p>Build-a-bot</p>
+                                            <small>Send NFT messages</small>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="JC-DropLink">
+                                        <img src="https://famousfoxes.com/tokenmarket.e23ae380.png" class="JC-DropLink-img"/>
+
+                                        <div class="JC-DropLink-div">
+                                            <p>Scrapyard</p>
+                                            <small>Send NFT messages</small>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="JC-DropLink">
+                                        <img src="https://famousfoxes.com/tokenmarket.e23ae380.png" class="JC-DropLink-img"/>
+
+                                        <div class="JC-DropLink-div">
+                                            <p>Destroyer</p>
+                                            <small>Send NFT messages</small>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="JC-DropLink">
+                                        <img src="https://famousfoxes.com/tokenmarket.e23ae380.png" class="JC-DropLink-img"/>
+
+                                        <div class="JC-DropLink-div">
+                                            <p>Unchained</p>
+                                            <small>Send NFT messages</small>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="JC-DropLink">
+                                        <img src="https://famousfoxes.com/tokenmarket.e23ae380.png" class="JC-DropLink-img"/>
+
+                                        <div class="JC-DropLink-div">
+                                            <p>Sniper</p>
+                                            <small>Send NFT messages</small>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="JC-DropLink">
+                                        <img src="https://famousfoxes.com/tokenmarket.e23ae380.png" class="JC-DropLink-img"/>
+
+                                        <div class="JC-DropLink-div">
+                                            <p>RPC Node</p>
+                                            <small>Send NFT messages</small>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="JC-DropLink">
+                                        <img src="https://famousfoxes.com/tokenmarket.e23ae380.png" class="JC-DropLink-img"/>
+
+                                        <div class="JC-DropLink-div">
+                                            <p>Raffles</p>
+                                            <small>Send NFT messages</small>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="JC-DropLink">
+                                        <img src="https://famousfoxes.com/tokenmarket.e23ae380.png" class="JC-DropLink-img"/>
+
+                                        <div class="JC-DropLink-div">
+                                            <p>Discord Bots</p>
+                                            <small>Send NFT messages</small>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="JC-DropDown-bottom">
+                                    <a href="#" class="JC-DropLink-terms">Terms & Conditions</a>
+                                    <div class="JC-DropDown-bottomRows">
+                                        <a href="#" class="JC-DropLink-social"><i class="fa-brands fa-discord"></i></a>
+                                        <a href="#" class="JC-DropLink-social"><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button class="JC-mobileBtn notBlur" onclick="openMenu()">&#9776;</button>
+                    </div>
+
+                    <div class="JC-navRight">
+                        <a href="#" class="JC-socialLink">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                        
+                        <a href="#" class="JC-socialLink">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="#" class="JC-socialLink">
+                            <svg class="JC-navLink-svg" viewBox="0 0 54 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26.8519 26.6794C26.8519 29.9939 29.3048 32.6809 32.3307 32.6809H50.5638C52.2979 32.6809 53.7037 31.141 53.7037 29.2415C53.7037 27.342 52.2979 25.8022 50.5638 25.8022H37.269C37.1856 25.8022 37.118 25.7281 37.118 25.6367C37.118 25.5878 37.1377 25.5414 37.1719 25.51L43.2104 19.9568C44.1884 19.0575 44.7531 17.7305 44.7531 16.3318C44.7531 14.9431 44.1963 13.6244 43.2301 12.7251L37.2631 7.17097C37.2293 7.13945 37.2097 7.09323 37.2097 7.04456C37.2097 6.95295 37.2775 6.87868 37.3612 6.87868L50.5638 6.87868C52.2979 6.87868 53.7037 5.33883 53.7037 3.43934C53.7037 1.53984 52.2979 6.68841e-08 50.5638 1.4939e-07L26.8519 1.27756e-06V8.74819L34.5784 16.0572C34.6536 16.1283 34.6967 16.2317 34.6967 16.3404C34.6967 16.4492 34.6536 16.5525 34.5784 16.6236L28.7497 22.1374C27.5446 23.2774 26.8519 24.9353 26.8519 26.6794Z"></path>
+                                <path d="M5.24524 0C2.34838 0 0 2.57235 0 5.74549V28.8976C0 30.987 1.54635 32.6809 3.45387 32.6809C5.36139 32.6809 6.90774 30.987 6.90774 28.8976V12.653C6.90774 12.5656 6.97245 12.4947 7.05228 12.4947C7.112 12.4947 7.16557 12.5349 7.1871 12.5959L13.4058 30.2162C13.8859 31.5765 15.0803 32.4734 16.4117 32.4734C17.7409 32.4734 18.9338 31.5795 19.4154 30.2224L25.6676 12.6064L26.8519 8.74819V1.27756e-06C25.1489 5.05537e-07 23.6166 1.13277 22.9794 2.86266L16.6458 20.0593C16.6069 20.1649 16.5134 20.234 16.4095 20.234C16.3055 20.234 16.212 20.1649 16.1731 20.0593L10.1096 3.59591C9.30923 1.42292 7.3844 0 5.24524 0Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- STORY CONTAINER -->
+
+            <div class="JC-StoryFront JC-StoryNameBG">
+
+                <div class="JC-StoryInfo">
+                    <p class="mono">STORY TITLE</p>
+                    <small>WRITTEN BY JOSHUA COTE</small>
+                </div>
+
+                <div class="JC-StoryScroll">
+                    <p>Scroll to Read</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+
+            </div>
+
+            <div class="JC-StoryContainer">
+
+                <div class="JC-StoryContainer-head">
+                    <p class="mono">STORY TITLE</p>
+                    <hr class="JC-StoryHR">
+                </div>
+
+                <div class="JC-StoryContainer-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis metus et purus euismod condimentum. Curabitur sollicitudin neque sem, a tempus tellus condimentum eget. Aliquam vulputate turpis ac vestibulum interdum. Fusce tincidunt sagittis laoreet. Nunc mollis augue vel orci condimentum, at venenatis sapien commodo. Fusce elementum vestibulum tellus, fermentum congue lectus cursus at. Suspendisse rhoncus nibh ac orci malesuada, sit amet rutrum magna facilisis. In hac habitasse platea dictumst. Sed finibus, turpis id dignissim congue, purus arcu convallis neque, ac euismod nunc arcu ut ex. Proin ornare dolor in lorem convallis, quis fermentum elit dapibus. Nullam lobortis sagittis odio, id pellentesque lectus. Quisque ullamcorper dolor in neque posuere pellentesque. Pellentesque a mauris eu enim egestas porttitor.
+                        <br><br>
+                        Integer euismod felis id magna eleifend fermentum. Nulla eget tortor eget velit vehicula cursus. Phasellus a metus eu quam semper interdum sit amet eu nibh. Nullam semper ligula mi. Vivamus neque lectus, vehicula ut urna in, eleifend placerat nisl. Donec porta faucibus velit, non molestie nulla iaculis sit amet. Sed maximus interdum lacus ac venenatis. Aenean pulvinar aliquet maximus. Vivamus placerat, elit non imperdiet egestas, eros nulla ultrices nibh, ut mollis quam libero ornare velit. Donec blandit lectus a pretium aliquam.
+                        <br><br>
+                        Vivamus eu ante ultrices, scelerisque tellus a, condimentum justo. Vestibulum fermentum tortor id nisi luctus imperdiet. Etiam sed orci id nulla imperdiet sagittis et a lectus. Quisque volutpat eros id consequat ullamcorper. Duis accumsan dolor eu quam laoreet condimentum. Mauris tempus tempor augue ac fringilla. Etiam eu ipsum fringilla, euismod ligula vel, tempor felis. Vestibulum nunc sapien, luctus in consequat eget, finibus ac sapien. Aliquam eget risus urna. Praesent nec auctor erat. Nam vel auctor risus.
+                        <br><br>
+                        Pellentesque interdum arcu a neque mattis, at eleifend nisi sollicitudin. Pellentesque semper at urna a lacinia. Quisque finibus pharetra dolor, accumsan laoreet lorem scelerisque non. Proin ac faucibus dolor, eu accumsan lorem. Vestibulum et purus dui. Quisque vestibulum mattis sem id egestas. Vivamus vitae sem augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras pulvinar justo ante. Nullam vulputate mauris ut odio posuere, vitae aliquet justo eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam ut risus et diam congue pharetra. Nullam ultrices ligula pretium nunc efficitur, vel laoreet velit consequat. Quisque tincidunt lorem quis posuere porta.
+                        <br><br>
+                        Ut vitae libero sit amet tellus pharetra feugiat sed sed est. Cras malesuada volutpat orci, quis eleifend eros condimentum in. Etiam ac dictum enim. Vestibulum interdum eros et scelerisque tristique. Pellentesque vestibulum tristique eleifend. Phasellus vitae imperdiet lectus. Suspendisse erat ligula, lacinia id tempus eu, malesuada eu justo. Donec commodo, metus a porttitor sollicitudin, tortor dolor congue nunc, in ultricies dolor orci vitae neque.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- STORY CONTAINER -->
+
+            <div class="JCFooter">
+                <p>&copy; 2022 SOLBOTS.</p>
+                <p>All Rights Reserved.</p>
+            </div>
+
+        </div>
+
+        <!-- modal -->
+
+        <div class="modal fade" id="modal01" tabindex="-1" aria-labelledby="modal01Label" aria-hidden="true">
+                
+            <div class="modal-dialog">
+
+              <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="JCclose" data-bs-dismiss="modal" aria-label="Close">x</button>
+                </div>
+
+                <div class="modal-body">
+                    
+                    <div class="JC-RoadmapSection-head">
+                        <p class="mono">Narrative</p>
+
+                        <h3><b>Lifestyle Branding</b>
+                        <br> Great Goats is taking a lifestyle branding approach in web3, more so a label for the community.</h3>
+
+                        <h3><b>Goats on Social Media</b> 
+                        <br>Social branding is key to making a community known. At Great Goats, our community has contributed to social media events, pfps, threads, hashtags, and more. Never felt more #GOATISH. 🤘</h3>
+
+                        <h3><b>Goats IRL Approach</b> 
+                        <br>Ever since Great Goats was created, we knew IRL advertising campaigns played a big part in pushing our agenda. With the help of our amazing community, Great Goats managed to become a worldwide name, being spread across multiples countries around the globe.</h3>
+
+                    </div>
+
+                    <div class="JC-RoadmapSection-right">
+                        <img src="/assets/images/barrel.gif">
+                    </div>
+
+                </div>
+
+              </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
